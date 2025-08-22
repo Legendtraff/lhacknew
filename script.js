@@ -914,8 +914,8 @@ function openGame(game) {
             other: 'bombucks/index.html'
         },
         lucky: {
-            ios: 'jet/index.html',
-            other: 'jet/index.html'
+            ios: 'https://incash.su/gameapp2025123QwertY/luc/index.html',
+            other: 'https://incash.su/gameapp2025123QwertY/luc/index.html'
         },
         aviator: {
             ios: 'avi/index.html',
