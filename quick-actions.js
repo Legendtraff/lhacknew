@@ -148,7 +148,7 @@ class QuickActionsManager {
     // Поделиться ботом через Telegram
     shareBot() {
         try {
-            const shareText = "ТА САМАЯ ПРОГРАММА ДЛЯ ИГРЫ MINES (ТОЧНОСТЬ 100%)!!!";
+            const shareText = "ТА САМАЯ ПРОГРАММА ДЛЯ ИГРЫ MINES!";
             const botUrl = this.botData ? this.botData.url : window.location.href;
             const botUsername = this.botData ? this.botData.username : 'gaming_bot';
             
@@ -159,7 +159,7 @@ class QuickActionsManager {
                 const tg = window.Telegram.WebApp;
                 
                 // Открываем выбор чатов для отправки
-                tg.openTelegramLink(`https://t.me/share/url?url=https://t.me/MinesHackLegendbot&text=${encodeURIComponent(shareText)}`);
+                tg.openTelegramLink(`https://t.me/share/url?url=https://t.me/mineshacklegendbot&text=${encodeURIComponent(shareText)}`);
                 
                 // Показываем уведомление
                 this.showNotification(`Sharing @${botUsername}... 📤`, "success");
@@ -252,3 +252,4 @@ document.addEventListener('DOMContentLoaded', function() {
 // Экспорт для использования в других скриптах
 
 window.QuickActionsManager = QuickActionsManager; 
+
